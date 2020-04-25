@@ -44,6 +44,7 @@ slstatus: slstatus.o $(COM:=.o) $(REQ:=.o)
 
 clean:
 	rm -f slstatus slstatus.o $(COM:=.o) $(REQ:=.o)
+	rm -rf src pkg *.pkg.tar.xz
 
 dist:
 	rm -rf "slstatus-$(VERSION)"
